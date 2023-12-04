@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=ArmCord
-Exec=/opt/ArmCord/armcord %U
+Exec=/usr/bin/armcord %U
 Terminal=false
 Type=Application
 Icon=armcord

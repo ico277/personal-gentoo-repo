@@ -1,0 +1,10 @@
+#!/bin/sh
+
+CONFIG=${XDG_CONFIG_HOME:-~/.config}
+FLAGS="$CONFIG/armcord-flags.conf"
+
+if [ -f "$FLAGS" ]; then
+  USER_FLAGS="$(cat "$FLAGS")"
+fi
+
+/opt/ArmCord/armcord $USER_FLAGS "$@"
