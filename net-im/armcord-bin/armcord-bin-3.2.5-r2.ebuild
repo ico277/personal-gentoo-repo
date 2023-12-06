@@ -17,12 +17,11 @@ inherit chromium-2 desktop linux-info optfeature unpacker xdg
 DESCRIPTION="ArmCord is a custom client designed to enhance your Discord experience while keeping everything lightweight."
 HOMEPAGE="https://armcord.app/"
 SRC_URI="https://github.com/ArmCord/ArmCord/releases/download/v${MY_PV}/ArmCord-${MY_PV}.tar.gz"
-#SRC_URI="https://dl.discordapp.net/apps/linux/${MY_PV}/${MY_PN}-${MY_PV}.tar.gz"
 
 LICENSE="OSL-3.0"
 SLOT="0"
 KEYWORDS="~amd64"
-RESTRICT="bindist mirror strip test"
+RESTRICT="mirror strip test"
 IUSE="+appindicator"
 
 RDEPEND="
@@ -81,12 +80,6 @@ src_prepare() {
     pushd "locales/" >/dev/null || die "location change for language cleanup failed"
     chromium_remove_language_paks
     popd >/dev/null || die "location reset for language cleanup failed"
-    # USE seccomp
-#   if ! use seccomp; then
-#        sed -i '/Exec/s/Discord/Discord --disable-seccomp-filter-sandbox/' \
-#            "${MY_PN}.desktop" ||
-#            die "sed failed for seccomp"
-#    fi
 }
 
 src_install() {
