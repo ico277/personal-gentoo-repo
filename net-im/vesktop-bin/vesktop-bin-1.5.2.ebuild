@@ -16,7 +16,7 @@ inherit chromium-2 desktop linux-info optfeature unpacker xdg
 
 DESCRIPTION="Vesktop gives you the performance of web Discord and the comfort of Discord Desktop"
 HOMEPAGE="https://github.com/Vencord/Vesktop"
-SRC_URI="https://github.com/Vencord/Vesktop/releases/download/v${MY_PV}/Vesktop-${MY_PV}.tar.gz"
+SRC_URI="https://github.com/Vencord/Vesktop/releases/download/v${MY_PV}/vesktop-${MY_PV}.tar.gz"
 
 LICENSE="GPL-3.0"
 SLOT="0"
@@ -63,10 +63,10 @@ QA_PREBUILT="*"
 CONFIG_CHECK="~USER_NS"
 
 #S="${WORKDIR}/${MY_PN^}"
-S="${WORKDIR}/Vesktop-${MY_PV}"
+S="${WORKDIR}/vesktop-${MY_PV}"
 
 src_unpack() {
-    unpack Vesktop-${MY_PV}.tar.gz
+    unpack vesktop-${MY_PV}.tar.gz
 }
 
 src_configure() {
