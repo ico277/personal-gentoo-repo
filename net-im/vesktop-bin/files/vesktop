@@ -1,0 +1,10 @@
+#!/bin/sh
+
+CONFIG=${XDG_CONFIG_HOME:-~/.config}
+FLAGS="$CONFIG/vesktop-flags.conf"
+
+if [ -f "$FLAGS" ]; then
+  USER_FLAGS="$(cat "$FLAGS")"
+fi
+
+/opt/Vesktop/armcord $USER_FLAGS "$@"
