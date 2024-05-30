@@ -7,4 +7,4 @@ if [ -f "$FLAGS" ]; then
   USER_FLAGS="$(cat "$FLAGS")"
 fi
 
-/opt/Vesktop/armcord $USER_FLAGS "$@"
+/opt/Vesktop/vesktop $USER_FLAGS "$@"
