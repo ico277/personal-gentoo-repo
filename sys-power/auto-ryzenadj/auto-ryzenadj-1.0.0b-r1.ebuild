@@ -17,7 +17,7 @@ IUSE="systemd"
 DEPEND="dev-libs/boost
         dev-cpp/cli11
         sys-power/RyzenAdj
-		dev-libs/toml++"
+		dev-cpp/tomlplusplus"
 RDEPEND="${DEPEND}"
 
 src_unpack() {
