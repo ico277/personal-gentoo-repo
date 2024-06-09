@@ -30,13 +30,17 @@ src_compile() {
 }
 
 src_install() {
-    emake PREFIX="${D}" install
-    # Create the /var/log/auto-ryzenadj directory
+    # Ensure the necessary directories are created
     dodir /var/log/auto-ryzenadj
-    
+    dodir /bin
+
     # Install the example config file
     insinto /etc
     doins "${S}/auto-ryzenadj.conf.example"
+
+    # Install the binary
+    exeinto /bin
+    doexe "${S}/path/to/auto-ryzenadjctl"
 }
 
 pkg_postinst() {
