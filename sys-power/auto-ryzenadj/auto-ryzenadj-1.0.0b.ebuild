@@ -30,22 +30,22 @@ src_compile() {
 }
 
 src_install() {
-    # Ensure the necessary directories are created
+    # Create necessary directories
     dodir /var/log/auto-ryzenadj
-    dodir /bin
 
     # Install the example config file
     insinto /etc
     doins "${S}/auto-ryzenadj.conf.example"
 
-    # Install the binary
-    exeinto /bin
-    doexe "${S}/path/to/auto-ryzenadjctl"
+    # Install the executables without .out extension
+    exeinto /usr/bin
+    newexe "${S}/auto-ryzenadjd.out" "auto-ryzenadjd"       # Rename and install without .out
+    newexe "${S}/auto-ryzenadjctl.out" "auto-ryzenadjctl"   # Rename and install without .out
 }
 
 pkg_postinst() {
     # Display a message after installation
-    elog "A new log directory has been created at /var/log/auto-ryzenadj"
+    elog "A log directory has been created at /var/log/auto-ryzenadj"
     elog "An example config file has been installed at /etc/auto-ryzenadj.conf.example"
     elog "You may want to copy it to /etc/auto-ryzenadj.conf and edit it according to your needs."
 }
