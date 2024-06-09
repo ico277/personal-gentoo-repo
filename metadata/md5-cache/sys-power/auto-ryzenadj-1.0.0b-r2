@@ -9,4 +9,4 @@ LICENSE=MIT
 RDEPEND=dev-libs/boost dev-cpp/cli11 sys-power/RyzenAdj dev-cpp/tomlplusplus
 SLOT=0
 SRC_URI=https://github.com/ico277/auto-ryzenadj/archive/v1.0.0b2.tar.gz -> auto-ryzenadj-1.0.0b2.tar.gz
-_md5_=e24883455816302dd6e28d25b6a544f7
+_md5_=d88911468ddb447259ae9cd46fe6bc3f

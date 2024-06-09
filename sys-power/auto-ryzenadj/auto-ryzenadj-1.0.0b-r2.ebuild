@@ -9,6 +9,8 @@ DESCRIPTION="auto-ryzenadj - automatically applies custom ryzenadj profiles"
 HOMEPAGE="https://github.com/ico277/auto-ryzenadj/"
 SRC_URI="https://github.com/ico277/auto-ryzenadj/archive/v${MY_PV}2.tar.gz -> ${P}2.tar.gz"
 
+S="${S}2"
+
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
