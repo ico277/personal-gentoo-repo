@@ -14,7 +14,7 @@ IUSE=""
 
 DEPEND="dev-libs/boost
         dev-cpp/cli11
-        sys-power/ryzenadj"
+        sys-power/RyzenAdj"
 RDEPEND="${DEPEND}"
 
 src_unpack() {

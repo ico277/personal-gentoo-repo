@@ -1,11 +1,11 @@
 DEFINED_PHASES=compile install postinst prepare unpack
-DEPEND=dev-libs/boost dev-cpp/cli11 sys-power/ryzenadj
+DEPEND=dev-libs/boost dev-cpp/cli11 sys-power/RyzenAdj
 DESCRIPTION=auto-ryzenadj - automatically applies custom ryzenadj profiles
 EAPI=8
 HOMEPAGE=https://github.com/ico277/auto-ryzenadj/
 KEYWORDS=~amd64
 LICENSE=MIT
-RDEPEND=dev-libs/boost dev-cpp/cli11 sys-power/ryzenadj
+RDEPEND=dev-libs/boost dev-cpp/cli11 sys-power/RyzenAdj
 SLOT=0
 SRC_URI=https://github.com/ico277/auto-ryzenadj/archive/v1.0.0b.tar.gz -> auto-ryzenadj-1.0.0b.tar.gz
-_md5_=81beeec899565f55ccc0c8c96c490871
+_md5_=93a87aa26839e81b52033432eeef36f8
