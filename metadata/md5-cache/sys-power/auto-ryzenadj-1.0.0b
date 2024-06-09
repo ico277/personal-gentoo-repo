@@ -8,4 +8,4 @@ LICENSE=MIT
 RDEPEND=dev-libs/boost dev-cpp/cli11 sys-power/RyzenAdj
 SLOT=0
 SRC_URI=https://github.com/ico277/auto-ryzenadj/archive/v1.0.0b.tar.gz -> auto-ryzenadj-1.0.0b.tar.gz
-_md5_=13de29bb516aa884f88a175256e95290
+_md5_=33fb974a44813a52b3fca0d07fe4e1ce

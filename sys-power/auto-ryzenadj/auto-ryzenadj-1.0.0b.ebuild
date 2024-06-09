@@ -1,5 +1,5 @@
-# Copyright 2024 Gentoo Authors
-# Distributed under the terms of the GNU General Public License v2
+# Copyright 2024 ico277
+# Distributed under the terms of the MIT License
 
 EAPI=8
 
