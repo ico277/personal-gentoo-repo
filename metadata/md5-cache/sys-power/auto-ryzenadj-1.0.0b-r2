@@ -8,5 +8,5 @@ KEYWORDS=~amd64
 LICENSE=MIT
 RDEPEND=dev-libs/boost dev-cpp/cli11 sys-power/RyzenAdj dev-cpp/tomlplusplus
 SLOT=0
-SRC_URI=https://github.com/ico277/auto-ryzenadj/archive/v1.0.0b2.tar.gz -> auto-ryzenadj-1.0.0b.tar.gz
-_md5_=abf5f7a5feb41a9fd251597b3c72d7cb
+SRC_URI=https://github.com/ico277/auto-ryzenadj/archive/v1.0.0b2.tar.gz -> auto-ryzenadj-1.0.0b2.tar.gz
+_md5_=e24883455816302dd6e28d25b6a544f7

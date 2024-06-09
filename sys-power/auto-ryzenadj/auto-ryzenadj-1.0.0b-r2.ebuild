@@ -7,7 +7,7 @@ MY_PV="${PV/-r*/}"
 
 DESCRIPTION="auto-ryzenadj - automatically applies custom ryzenadj profiles"
 HOMEPAGE="https://github.com/ico277/auto-ryzenadj/"
-SRC_URI="https://github.com/ico277/auto-ryzenadj/archive/v${MY_PV}2.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/ico277/auto-ryzenadj/archive/v${MY_PV}2.tar.gz -> ${P}2.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
